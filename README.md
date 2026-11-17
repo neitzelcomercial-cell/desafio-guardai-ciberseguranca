@@ -181,7 +181,7 @@ O `git status --short` conferido ao final do trabalho mostrou:
 ```
 
 - **Modificados:** `.gitignore` (ignora `__pycache__/` e `*.py[cod]`), `AGENTS.md` (base de conhecimento e seção "Security Skills"), `agent/persona.md` (seção de especialização em segurança) e `README.md` (esta documentação).
-- **Criados:** `agent/knowledge/security-basics.md`, `skills/vulnerability-analysis/` (`SKILL.md`, `README.md` e `image.png`), `agent/app.py` e `agent/app_vulnerable.py`.
+- **Criados:** `agent/knowledge/security-basics.md`, `skills/vulnerability-analysis/` (`SKILL.md` e `README.md`), `agent/app.py` e `agent/app_vulnerable.py`.
 
 O diretório `agent/__pycache__/` pode aparecer no sistema de arquivos após executar o Python, mas está fora do Git pela regra adicionada ao `.gitignore`.
 
@@ -216,7 +216,7 @@ Os testes rodaram em **ambiente isolado**, com cópias dos dois arquivos em dire
 | `' OR '1'='1` na senha | **Acesso Permitido!** | **Acesso Negado.** |
 | `admin' UNION SELECT 1,2,3 --` | **Acesso Permitido!** | **Acesso Negado.** |
 
-Os três payloads de SQL Injection que burlecaram a autenticação na versão vulnerável foram **todos negados** na versão corrigida. Todas as asserções do script comparativo passaram.
+Os três payloads de SQL Injection que burlaram a autenticação na versão vulnerável foram **todos negados** na versão corrigida. Todas as asserções do script comparativo passaram.
 
 Quanto ao armazenamento: na versão vulnerável a linha salva foi `senha123` em texto puro; na corrigida foi `pbkdf2_sha256$310000$...`, com salt de 16 bytes, e a string `senha123` não aparece nos bytes do arquivo do banco.
 

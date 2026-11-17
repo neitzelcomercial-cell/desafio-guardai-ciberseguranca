@@ -167,18 +167,7 @@ dio-agent/
 
 ## 🛠️ Arquivos criados e modificados neste desafio
 
-O `git status --short` conferido ao final do trabalho mostrou:
-
-```
- M .gitignore
- M AGENTS.md
- M agent/persona.md
- M README.md
-?? agent/app.py
-?? agent/app_vulnerable.py
-?? agent/knowledge/security-basics.md
-?? skills/vulnerability-analysis/
-```
+Os arquivos listados abaixo foram criados ou modificados durante a implementação do GuardAI. As alterações foram registradas nos commits publicados no repositório.
 
 - **Modificados:** `.gitignore` (ignora `__pycache__/` e `*.py[cod]`), `AGENTS.md` (base de conhecimento e seção "Security Skills"), `agent/persona.md` (seção de especialização em segurança) e `README.md` (esta documentação).
 - **Criados:** `agent/knowledge/security-basics.md`, `skills/vulnerability-analysis/` (`SKILL.md` e `README.md`), `agent/app.py` e `agent/app_vulnerable.py`.
